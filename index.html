@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="https://kit.fontawesome.com/698b380f29.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="pesquisa">
+            <input type="text" id="barrapesquisa" placeholder="Cidade...">
+            <button id="btbuscar">Buscar</button>
+        </div>
+
+        <div id="infos" class="hidden">
+            <h3 id="name">Calgary</h3>
+            <div id="sec1">
+                <span id="temp">13°</span>
+                <div>
+                    <img id="icon" src="https://openweathermap.org/img/wn/04n@2x.png" alt="">
+                    <span id="desc">clear</span>
+                </div>
+            </div>
+
+            <div id="sec2">
+                <span id="humi">Humidade:</span>
+                <span id="vento">Vento:</span>
+            </div>
+        </div>
+        <div class="load">LOADIND...</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

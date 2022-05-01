@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background-image: url("https://source.unsplash.com/random/?sandiego");
+    background-size: cover;
+    background-position: center;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.card{
+    max-width: 85%;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+}
+
+.pesquisa{
+    margin-bottom: 50px;
+    background-color: #282b3fde;
+    border-radius: 26px;
+    padding: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+input::placeholder{
+    color: rgb(187, 187, 187);
+}
+
+#barrapesquisa{
+    background-color: #282b3f00;
+    border: none;
+    width: 100%;
+    color: rgb(242, 242, 242);
+}
+
+#barrapesquisa:focus{
+    outline: none;
+}
+
+#btbuscar{
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    padding: 5px 13px;
+    color: white;
+    background-color: #009AD8;
+}
+
+#infos{
+    padding: 10px;
+    color: whitesmoke;
+    background-color: #323544e3;
+    border-radius: 15px;
+}
+
+#infos h3{
+    margin-bottom: 40px;
+}
+
+#sec1{
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+}
+
+#sec1 div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 20px;
+}
+
+#desc{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#sec2{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+#sec2 span{
+    padding: 8px 40px 10px 0px;
+}
+
+#load{
+    color: white;
+    background-color: #000000ba;
+    display: inline;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.hidden{
+    display: none;
+}
