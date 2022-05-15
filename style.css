@@ -1,7 +1,7 @@
 body{
     margin: 0;
     height: 100vh;
-    background-image: url("https://source.unsplash.com/random/?sandiego");
+    background-image: url("https://source.unsplash.com/random/?nature");
     background-size: cover;
     background-position: center;
 }
@@ -53,10 +53,11 @@ input::placeholder{
 }
 
 #infos{
-    padding: 10px;
+    padding: 20px;
     color: whitesmoke;
     background-color: #323544e3;
     border-radius: 15px;
+    box-shadow: 0px 0px 3px 1px skyblue;
 }
 
 #infos h3{
@@ -68,6 +69,7 @@ input::placeholder{
     font-weight: 600;
     margin-bottom: 40px;
     display: flex;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -85,15 +87,15 @@ input::placeholder{
 
 #sec2{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     flex-direction: row;
 }
 
 #sec2 span{
-    padding: 8px 40px 10px 0px;
+    padding: 8px 0px 10px 0px;
 }
 
-#load{
+.load{
     color: white;
     background-color: #000000ba;
     display: inline;
