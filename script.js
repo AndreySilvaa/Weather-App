@@ -7,6 +7,7 @@ const img = document.getElementById("icon")
 const desc = document.getElementById("desc")
 const humi = document.getElementById("humi")
 const vent = document.getElementById("vento")
+const st = document.getElementById("st")
 window.addEventListener("load", getLocation)
 
 let weather = {
@@ -38,13 +39,16 @@ let weather = {
         let description = data.weather[0].description
         let humidade = data.main.humidity
         let icon = data.weather[0].icon
+        let country = data.sys.country
+        let feellike = data.main.feels_like
 
-        city.innerText = `Clima em ${name}`
+        city.innerText = `Tempo em ${name} (${country})`
         temperatura.innerText = `${temp}°`
         img.src = `https://openweathermap.org/img/wn/${icon}@2x.png`
         desc.innerText = description
-        humi.innerText = `Humidade: ${humidade}%`
+        humi.innerText = `Umidade: ${humidade}%`
         vent.innerText = `Vento: ${vento}km/h`
+        st.innerText = `Sensação Térmica: ${feellike.toFixed(0)}°`
         
         load.classList.add("hidden")
         info.classList.remove("hidden")
